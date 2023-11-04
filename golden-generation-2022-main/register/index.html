@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>GG2022 Individual Registration</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css" />
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <!-- Favicon -->
+    <link href="images/index.png" rel="icon" />
+    <link href="images/index.png" rel="apple-touch-icon" />
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="signup-content">
+                <div class="signup-img">
+                    <img src="images/signup-img.jpg" alt="" />
+                </div>
+                <div class="signup-form">
+                    <form method="POST" class="register-form" id="register-form">
+                        <h2>Individual Registration Page For GG2022</h2>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="surname">Surname :</label>
+                                <input type="text" name="surname" id="surname" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="other_name">Other Names :</label>
+                                <input type="text" name="other_name" id="other_name" required />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number :</label>
+                            <input type="text" name="phone" id="phone" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address :</label>
+                            <input type="email" name="email" id="email" placeholder="yourmail@gmail.com" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="school">School :</label>
+                            <input type="text" name="school" id="school" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Address :</label>
+                            <input type="text" name="address" id="address" required />
+                        </div>
+                        <!-- <div class="form-radio">
+                            <label for="gender" class="radio-label">Gender :</label>
+                            <div class="form-radio-item">
+                                <input type="radio" name="gender" id="male" value="male" />
+                                <label for="male">Male</label>
+                                <span class="check"></span>
+                            </div>
+                            <div class="form-radio-item">
+                                <input type="radio" name="gender" id="female" value="female" />
+                                <label for="female">Female</label>
+                                <span class="check"></span>
+                            </div>
+                        </div> -->
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="gender">Gender :</label>
+                                <div class="form-select">
+                                    <select name="gender" id="gender" required>
+                      <option value="" disabled selected>
+                        Select your gender
+                      </option>
+                      <option value="male">Male</option>
+                      <option value="female">Female</option>
+                    </select>
+                                    <span class="select-icon">
+                      <i class="zmdi zmdi-chevron-down"></i>
+                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="class">Class :</label>
+                                <div class="form-select">
+                                    <select name="class" id="class" required>
+                      <option value="" disabled selected>
+                        Select your class
+                      </option>
+                      <option value="ss1">SSS 1</option>
+                      <option value="ss2">SSS 2</option>
+                      <option value="ss3">SSS 3</option>
+                    </select>
+                                    <span class="select-icon">
+                      <i class="zmdi zmdi-chevron-down"></i>
+                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-submit">
+                            <input type="submit" value="Submit Form" class="submit" name="submit" id="submit" />
+                        </div>
+                        <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">
+                                            Modal 2
+                                        </h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Hide this modal and show the first with the button below.
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
+                        Back to first
+                      </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="vendor/jquery/jquery.min.js "></script>
+    <script src="js/main.js "></script>
+</body>
+<!-- This templates was made by Colorlib (https://colorlib.com) -->
+
+</html>
