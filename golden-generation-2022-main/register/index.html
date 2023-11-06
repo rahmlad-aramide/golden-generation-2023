@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>GG2022 Individual Registration</title>
+    <title>GGQUIZ2023 Registration Page</title>
 
     <!-- Font Icon -->
     <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css" />
@@ -20,31 +20,65 @@
     <!-- Favicon -->
     <link href="images/index.png" rel="icon" />
     <link href="images/index.png" rel="apple-touch-icon" />
+
+    <style>
+        body {
+            background-image: none;
+        }
+        @media (max-width: 990px) {
+            body {
+                background-image: url(./images/index.png);
+                background-blend-mode: overlay;
+            }
+        }
+        .responsive-margin {
+            margin-block: 50px;
+        }
+
+        @media (max-width: 990px) {
+            .responsive-margin {
+                margin-block: 0px;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .register-form {
+                padding: 30px 20px 30px 20px;
+            }
+        }
+        @media screen and (max-width: 575px) {
+            .register-form {
+                padding: 20px 10px 20px 10px;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <div class="main">
         <div class="container">
-            <div class="signup-content">
-                <div class="signup-img">
-                    <img src="images/signup-img.jpg" alt="" />
-                </div>
-                <div class="signup-form">
+            <div class="signup-content"
+                style="background-image: url(./images/index.png); background-blend-mode: multiply; background-color: #00000050;"
+                >
+                <div class="signup-form responsive-margin" style="background-color: white; margin-inline: auto;">
                     <form method="POST" class="register-form" id="register-form">
-                        <h2>Individual Registration Page For GG2022</h2>
+                        <h2>Registration Page For GGQUIZ2023</h2>
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="surname">Surname :</label>
-                                <input type="text" name="surname" id="surname" required />
+                                <input type="text" name="surname" id="surname" required
+                                    placeholder="Enter your surname here" />
                             </div>
                             <div class="form-group">
                                 <label for="other_name">Other Names :</label>
-                                <input type="text" name="other_name" id="other_name" required />
+                                <input type="text" name="other_name" id="other_name" required
+                                    placeholder="Enter your other names here" />
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="phone">Phone Number :</label>
-                            <input type="text" name="phone" id="phone" required />
+                            <input type="text" name="phone" id="phone" required
+                                placeholder="Enter your phone number here" />
                         </div>
                         <div class="form-group">
                             <label for="email">Email Address :</label>
@@ -52,82 +86,48 @@
                         </div>
                         <div class="form-group">
                             <label for="school">School :</label>
-                            <input type="text" name="school" id="school" required />
+                            <input type="text" name="school" id="school" required
+                                placeholder="What school are you from?" />
                         </div>
                         <div class="form-group">
                             <label for="address">Address :</label>
-                            <input type="text" name="address" id="address" required />
+                            <input type="text" name="address" id="address" required placeholder="Where do you live?" />
                         </div>
-                        <!-- <div class="form-radio">
-                            <label for="gender" class="radio-label">Gender :</label>
-                            <div class="form-radio-item">
-                                <input type="radio" name="gender" id="male" value="male" />
-                                <label for="male">Male</label>
-                                <span class="check"></span>
-                            </div>
-                            <div class="form-radio-item">
-                                <input type="radio" name="gender" id="female" value="female" />
-                                <label for="female">Female</label>
-                                <span class="check"></span>
-                            </div>
-                        </div> -->
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="gender">Gender :</label>
                                 <div class="form-select">
                                     <select name="gender" id="gender" required>
-                      <option value="" disabled selected>
-                        Select your gender
-                      </option>
-                      <option value="male">Male</option>
-                      <option value="female">Female</option>
-                    </select>
+                                        <option value="" disabled selected>
+                                            Select your gender
+                                        </option>
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                    </select>
                                     <span class="select-icon">
-                      <i class="zmdi zmdi-chevron-down"></i>
-                    </span>
+                                        <i class="zmdi zmdi-chevron-down"></i>
+                                    </span>
                                 </div>
                             </div>
-                        </div>
-                        <div class="form-row">
                             <div class="form-group">
                                 <label for="class">Class :</label>
                                 <div class="form-select">
                                     <select name="class" id="class" required>
-                      <option value="" disabled selected>
-                        Select your class
-                      </option>
-                      <option value="ss1">SSS 1</option>
-                      <option value="ss2">SSS 2</option>
-                      <option value="ss3">SSS 3</option>
-                    </select>
+                                        <option value="" disabled selected>
+                                            Select your class
+                                        </option>
+                                        <option value="ss1">SSS 1</option>
+                                        <option value="ss2">SSS 2</option>
+                                        <option value="ss3">SSS 3</option>
+                                    </select>
                                     <span class="select-icon">
-                      <i class="zmdi zmdi-chevron-down"></i>
-                    </span>
+                                        <i class="zmdi zmdi-chevron-down"></i>
+                                    </span>
                                 </div>
                             </div>
                         </div>
                         <div class="form-submit">
                             <input type="submit" value="Submit Form" class="submit" name="submit" id="submit" />
-                        </div>
-                        <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
-                            <div class="modal-dialog modal-dialog-centered">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">
-                                            Modal 2
-                                        </h1>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        Hide this modal and show the first with the button below.
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
-                        Back to first
-                      </button>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </form>
                 </div>
